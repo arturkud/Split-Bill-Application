@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Iosevka+Charon+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Noto+Sans+Mono:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F8F9FA;
+  color: #212529;
+  font-family: 'IBM Plex Serif', sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 36px;
+  font-family: 'Noto Sans Mono', sans-serif;
+  font-weight: 200;
+}
+
+input {
+  font-size: 18px;
+  color: #212529;
+  margin-top: .3rem;
+  padding: .5rem;
+  border-radius: 7px;
+  border: 1px solid #212529;
+  font-family: 'IBM Plex Serif', sans-serif;
+  font-weight: 400;
+}
+
+button {
+  font-family: 'Iosevka Charon Mono', sans-serif;
+  color: #212529;
+}
+
+.container {
+  background-color: #E9ECEF;
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+  margin: 0 auto;
+  margin-top: 6rem;
+  border-radius: 8px;
+  box-shadow: 0 0 2px #212529;
+}
+
+form {
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.form-input {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.form-btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-btns button, .form-btns select {
+  width: 200px;
+  height: 36px;
+  border-radius: 7px;
+  margin: 0 auto;
+  padding: .3rem;
+}
+
+#tipOptions {
+  border: 1px solid #495057;
+  font-size: 16px;
+  font-family: 'IBM Plex Serif', sans-serif;
+  font-weight: 400;
+  margin-top: .8rem;
+}
+
+#tip {
+  font-size: 18px;
+  background-color: #ADB5BD;
+  cursor: pointer;
+  transition: background-color .15s ease-in-out;
+  border: 1px solid #495057;
+}
+
+#tip:hover {
+  background-color: #CED4DA;
+}
+
+#calculate {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  height: 50px;
+  background-color: #6C757D;
+  cursor: pointer;
+  border: 1px solid #212529;
+  transition: background-color .15s ease-in-out;
+}
+
+#calculate:hover {
+  background-color: #CED4DA;
+}
+
+.resultsContainer {
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  display: flex;
+}
+
+.hideTips {
+  display: none;
+}
+
+.hideResults {
+  display: none;
+}
+
+#resultBill, #resultTip, #resultTotal {
+  font-weight: 500;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split A Bill Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h1 class="heading">Split a bill</h1>
+    <form>
+
+      <div class="form-input">
+        <div>
+          <p>Bill amount:</p>
+          <span>$
+          <input type="text" id="bill">
+          </span>
+        </div>
+
+        <div>
+          <p>Number of people:</p>
+          <input type="text" id="numPeople">
+        </div>
+      </div>
+
+      <div class="form-btns">
+        <button id="tip">Add a tip</button>
+        <select id="tipOptions" class="hideTips">
+          <option disabled>Choose the option</option>
+          <option value=".30">30%</option>
+          <option value=".20">20%</option>
+          <option value=".10">10%</option>
+          <option value=".00" selected>No tip</option>
+        </select>
+
+        <button id="calculate">Calculate</button>
+      </div>
+
+      <div class="resultsContainer hideResults">
+        
+        <div>
+          <p>Bill:</p>
+          <p>$<span id="resultBill"></span> per person</p>
+        </div>
+
+        <div>
+          <p>Tip:</p>
+          <p>$<span id="resultTip"></span> per person</p>
+        </div>
+
+        <div>
+          <p>Total to pay:</p>
+          <p>$<span id="resultTotal"></span> per person</p>
+        </div>
+
+      </div>
+
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="index.js"></script>
+</body>
+</html>
